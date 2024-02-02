@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+  }
+  html{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+body{
+  color:white;
+  margin:0;
+  padding: 0;
+  background-color: black;
+}
+/* Base styles (for all screen sizes) */
+/* ... (your existing styles) ... */
+
+/* Mobile styles for Section 1 */
+@media screen and (max-width: 480px) {
+  .first {
+    background-size: cover;
+  }
+
+  .introabout {
+    text-align: center;
+    margin: 10% 5%;
+  }
+
+  .introabout h1 {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .introabout h3 {
+    font-size: 20px;
+  }
+
+  .introabout h4 {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .introabout button {
+    font-size: 18px;
+    margin-top: 5%;
+  }
+
+  .bookingcontainer {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: block;
+    margin-top: 5%;
+    margin-right: 5%;
+  }
+
+  .form-box {
+    max-width: 100%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+}
+.first{
+   
+   background-image:url(Images/1.png);
+   scroll-snap-align: end;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+.introabout h1{
+  margin-left: 5%;
+    font-size: 90px;
+    max-width: 60%;
+    font-weight: bolder;
+}
+.introabout h3{
+  margin-top: 6%;
+   margin-left: 5%;
+    font-size: 30px;
+    font-weight: 400;
+}
+.introabout h4{
+  margin-left: 5%;
+    padding-top:0px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+   
+}
+.introabout button{
+    background-color: greenyellow;
+    color:black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-top: 7%;
+    border-radius: 40px;
+    margin-left: 15%;
+}
+.introabout button a{
+  text-decoration: none;
+  color:black;
+}
+.bookingcontainer {
+    position: absolute;
+    top: 15%;
+    right: 6%;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .form-box {
+    background:transparent;
+    border: 1px solid rgb(244, 249, 251);
+    border-radius: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 800px; /* Adjust the width as needed */
+  }
+
+  .form-box p {
+   
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+    width:300px;
+  }
+  
+  .separate {
+    width:300px;
+    padding: 10px;
+    font-size: 16px;
+    
+    border-radius: 5px;
+  }
+  
+  .input-field label {
+   
+    margin-left: 5px;
+  }
+  .input-group button{
+    background-color: greenyellow;
+    color:black;
+    font-weight: lighter;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 20px;
+    width:300px;
+  }
+    /* Second section styles */
+    .second {
+      padding: 8% 20%;
+      text-align:left;
+      background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(Images/6.jpg);
+      background-size: 100% 100%;
+      background-repeat:no-repeat;
+      scroll-snap-align: start;
+    }
+    .planhead h2 {
+      font-size: 45px;
+      text-align:center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .planhead p {
+      padding-top: 1%;
+      font-size: 20px;
+      font-weight: lighter;
+      font-style: italic;
+    }
+/* Style for the hidbox containers */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.hidbox1,.hidbox2,.hidbox3 {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  position:relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style for the p tags inside hidbox containers */
+.hidbox1 p,
+.hidbox2 p,
+.hidbox3 p {
+display:none;
+font-size: 20px;
+}
+
+/* Hover effect to display the p tags */
+.hidbox1:hover p,
+.hidbox2:hover p,
+.hidbox3:hover p {
+  display: block;  
+}
+.hidbox1:hover, .hidbox2:hover, .hidbox3:hover{
+  background-color: greenyellow;
+  color:black;
+}
+
+.hidbox1 h6, .hidbox2 h6, .hidbox3 h6{
+  float:left;
+  font-size: 25px;
+}
+.hidbox1 h3, .hidbox2 h3, .hidbox3 h3{
+  font-size:25px;
+}
+.third{
+  padding-top: 2%;
+  background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(Images/6.jpg);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  scroll-snap-align: start;
+}
+ /* CSS styles for the slider */
+ .slider {
+  padding-top: 40px;
+  width: 60%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.slider-btn.previous {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+.slider-container h1{
+  font-size: 60px;
+  margin-left: 5%;
+}
+.slider-container p{
+  margin-left: 5%;
+  margin-right:10%;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+/* Styling for the fourth section */
+.fourth {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(Images/6.jpg);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  scroll-snap-align: start;
+}
+
+/* Styling for the tour package list */
+.pack {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Styling for the tour package list items */
+.tripplan {
+  list-style-type: none;
+}
+.pack h1{
+  font-size: 60px;
+}
+
+.tripplan li {
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+.tripplan li:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+/* Styling for the tour package details */
+.tripplan li p {
+  padding: 10px 0;
+  font-size: 17px;
+}
+.tripplan li p span{
+  font-size: 40px;
+}
+
+/* Styling for the tour package image */
+
+
+ .tour-image img {
+  width: 900px ;
+  padding-right: 25%;
+  padding-left: 10%;
+  padding-top: 10%;
+  height: 500px;
+
+}
+.fifth{
+  
+  padding: 2px 2%;
+  background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(Images/6.jpg);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  scroll-snap-align: start;
+}
+.content h1{
+  font-size: 60px;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.hidbox11,.hidbox12,.hidbox13 {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  position:relative;
+  overflow: hidden;
+  width: 50px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.hidbox11 p,.hidbox12 p,.hidbox13 p{
+  font-size: 30px;
+}
+.footer{
+  margin: 5%;
+  scroll-snap-align: start;
+}
+.foot h1{
+font-size: 50px;
+}
+.foot h6{
+font-size: 25px;
+}
+.firstul{
+display:flex;
+}
+
+.foot button{
+  background-color: greenyellow;
+    color:black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border-radius: 40px;
+    margin-left: 45%;
+}
+.foot button a{
+  text-decoration: none;
+}
+.foot ul li{
+  list-style: none;
+}
+.foot ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.foot ul li a:hover{
+  background-color: aliceblue;
+  color:black;
+}
